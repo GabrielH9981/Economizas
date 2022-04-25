@@ -19,7 +19,7 @@ public class PixelManager : MonoBehaviour
     private void OnTriggerStay2D(Collider2D collision){
         if (collision.CompareTag("Brush")){
             if(Input.GetMouseButton(0)){
-            Debug.Log("Pressed left click.");
+            //Debug.Log("Pressed left click.");
             sRend.color = transform.parent.GetComponent<GridManager>().GetCurrentColour();
             }
         }

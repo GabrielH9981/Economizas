@@ -6,7 +6,7 @@ public class FollowMouse : MonoBehaviour
 {
     Rigidbody2D rBody;
 
-    float maxBrushSize = 6;
+    float maxBrushSize = 10;
     float minBrushSize = 1;
 
     float currentBrushSize = 1;
@@ -24,18 +24,18 @@ public class FollowMouse : MonoBehaviour
 
     void ChangeBrushSize(){
         if(Input.GetAxis("Mouse ScrollWheel") > 0f){
-            Debug.Log("+++");
+            //Debug.Log("+++");
             currentBrushSize += 0.5f;
         }else if(Input.GetAxis("Mouse ScrollWheel") < 0f){
             currentBrushSize -= 0.5f;
-            Debug.Log("---");
+            //Debug.Log("---");
         }
         if(currentBrushSize > maxBrushSize){
-            Debug.Log("+++ LIMITE");
+            //Debug.Log("+++ LIMITE");
             currentBrushSize = maxBrushSize;
         }
         if(currentBrushSize < minBrushSize){
-            Debug.Log("--- LIMITE ");
+            //Debug.Log("--- LIMITE ");
             currentBrushSize = minBrushSize;
         }
 
