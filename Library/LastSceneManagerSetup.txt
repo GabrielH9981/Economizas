@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/TransitionScreen.unity
+- path: Assets/Scenes/InternalAmbients/RoomSchool.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

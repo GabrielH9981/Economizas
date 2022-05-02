@@ -22,6 +22,9 @@ public class ChangeScene : MonoBehaviour
             PlayerPrefs.SetString("Cena", "MenuHome");
             LoadScenes("TransitionScreen");    
         }
+        if (objCollider.name == "EstanteTrofeus"){
+            LoadScenes("Estante");   
+        }
         if (objCollider.name == "EntradaShop"){
             PlayerPrefs.SetString("Cena", "Shop");
             LoadScenes("TransitionScreen");    
@@ -37,6 +40,12 @@ public class ChangeScene : MonoBehaviour
         if (objCollider.name == "PortaSchool"){
             PlayerPrefs.SetString("Cena", "MenuSchool");
             LoadScenes("TransitionScreen");
+        }
+        if (objCollider.name == "EntradaSala"){
+            LoadScenes("RoomSchool");
+        }
+        if (objCollider.name == "PortaSala"){
+            LoadScenes("School");
         }
         if (objCollider.name == "EntradaMuseu"){
             PlayerPrefs.SetString("Cena", "Museu");
@@ -54,6 +63,14 @@ public class ChangeScene : MonoBehaviour
         }
         if (objCollider.name == "BalcaoMuseu"){
             LoadScenes("OptionsMuseu");
+        }
+        if (objCollider.name == "EntradaBanco"){
+            PlayerPrefs.SetString("Cena", "Bank");
+            LoadScenes("TransitionScreen");    
+        }
+        if (objCollider.name == "PortaBank"){
+            PlayerPrefs.SetString("Cena", "MenuBank");
+            LoadScenes("TransitionScreen");
         }
     }
 }
