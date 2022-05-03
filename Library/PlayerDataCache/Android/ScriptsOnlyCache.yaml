@@ -6,6 +6,8 @@ ScriptsOnlyBuild:
     - FollowMouse
     - GridManager
     - LoadingScreen
+    - MoneyController
+    - MoneySistem
     - PixelManager
     - PlayerController
     - PrintScreen
@@ -34,15 +36,15 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.RandomBrush
     Unity.2D.Tilemap.Extras.dll:
     - UnityEngine.Tilemaps.AnimatedTile
-    Unity.Mobile.AndroidLogcat.Editor.dll:
-    - Unity.Android.Logcat.AndroidLogcatManager
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -150,6 +152,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2202}
     - Class: 114
+      Script: {instanceID: 2338}
+    - Class: 114
       Script: {instanceID: 2782}
     - Class: 114
       Script: {instanceID: 2962}
@@ -161,7 +165,13 @@ ScriptsOnlyBuild:
       Script: {instanceID: 3494}
     - Class: 114
       Script: {instanceID: 4830}
+    - Class: 114
+      Script: {instanceID: 31290}
+    - Class: 114
+      Script: {instanceID: 43756}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -230,6 +240,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 3494}
     - Class: 114
       Script: {instanceID: 4830}
+    - Class: 114
+      Script: {instanceID: 31290}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -299,6 +311,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 3494}
     - Class: 114
       Script: {instanceID: 4830}
+    - Class: 114
+      Script: {instanceID: 31290}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -368,6 +382,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 3494}
     - Class: 114
       Script: {instanceID: 4830}
+    - Class: 114
+      Script: {instanceID: 31290}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -437,6 +453,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 3494}
     - Class: 114
       Script: {instanceID: 4830}
+    - Class: 114
+      Script: {instanceID: 31290}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -506,6 +524,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 3494}
     - Class: 114
       Script: {instanceID: 4830}
+    - Class: 114
+      Script: {instanceID: 31290}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -575,6 +595,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 3494}
     - Class: 114
       Script: {instanceID: 4830}
+    - Class: 114
+      Script: {instanceID: 31290}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -646,6 +668,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 4830}
     - Class: 114
       Script: {instanceID: 5584}
+    - Class: 114
+      Script: {instanceID: 31290}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -719,6 +743,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 4830}
     - Class: 114
       Script: {instanceID: 5584}
+    - Class: 114
+      Script: {instanceID: 31290}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -790,6 +816,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 4830}
     - Class: 114
       Script: {instanceID: 5584}
+    - Class: 114
+      Script: {instanceID: 31290}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -861,6 +889,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 4830}
     - Class: 114
       Script: {instanceID: 5584}
+    - Class: 114
+      Script: {instanceID: 31290}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -932,6 +962,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 4830}
     - Class: 114
       Script: {instanceID: 5584}
+    - Class: 114
+      Script: {instanceID: 31290}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -1766,6 +1798,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
     className: FabrikSolver2D
+  - hash:
+      serializedVersion: 2
+      Hash: 31316a424f2a8611044b0e25dd6ac9ec
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MoneySistem
+  - hash:
+      serializedVersion: 2
+      Hash: 04aacdab887adbef1251f01b32f984b9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MoneyController
   platform: 13
   scenePathNames:
   - Assets/Scenes/MenuS/MenuHome.unity
