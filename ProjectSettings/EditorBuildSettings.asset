@@ -53,4 +53,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/InternalAmbients/Bank.unity
     guid: ac736537082a80a4397c03138ab2d8fe
+  - enabled: 1
+    path: Assets/Scenes/CaixaEletronico.unity
+    guid: 27863806cc65cb443821d3c7c08d2b7b
   m_configObjects: {}

@@ -68,6 +68,9 @@ public class ChangeScene : MonoBehaviour
             PlayerPrefs.SetString("Cena", "Bank");
             LoadScenes("TransitionScreen");    
         }
+        if (objCollider.name == "CashMachine"){
+            LoadScenes("CaixaEletronico");
+        }
         if (objCollider.name == "PortaBank"){
             PlayerPrefs.SetString("Cena", "MenuBank");
             LoadScenes("TransitionScreen");
