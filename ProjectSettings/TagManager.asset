@@ -7,6 +7,8 @@ TagManager:
   - Brush
   - banco
   - carteira
+  - buttonsAula
+  - Video
   layers:
   - Default
   - TransparentFX

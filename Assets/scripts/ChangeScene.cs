@@ -9,6 +9,16 @@ public class ChangeScene : MonoBehaviour
         SceneManager.LoadScene(scene);
     }
 
+    public void ExitGame(){
+        Application.Quit();
+        Debug.Log("é o pijas");
+    }
+
+    public void ExitMenu(){
+        PlayerPrefs.SetString("Cena", "MenuHome");
+        LoadScenes("TransitionScreen");
+    }
+
     private void OnTriggerEnter2D(Collider2D objCollider) {
         Debug.Log("é o pijas: " + objCollider.name);
 
@@ -44,6 +54,9 @@ public class ChangeScene : MonoBehaviour
         if (objCollider.name == "EntradaSala"){
             LoadScenes("RoomSchool");
         }
+        if (objCollider.name == "ChairSchool"){
+            LoadScenes("menuAulas");
+        }
         if (objCollider.name == "PortaSala"){
             LoadScenes("School");
         }
@@ -70,6 +83,9 @@ public class ChangeScene : MonoBehaviour
         }
         if (objCollider.name == "CashMachine"){
             LoadScenes("CaixaEletronico");
+        }
+        if (objCollider.name == "InvestAgent"){
+            LoadScenes("Investimento");
         }
         if (objCollider.name == "PortaBank"){
             PlayerPrefs.SetString("Cena", "MenuBank");
