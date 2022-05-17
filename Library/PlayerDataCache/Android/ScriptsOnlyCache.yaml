@@ -38,8 +38,6 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.RandomBrush
     Unity.2D.Tilemap.Extras.dll:
     - UnityEngine.Tilemaps.AnimatedTile
-    Unity.Mobile.AndroidLogcat.Editor.dll:
-    - Unity.Android.Logcat.AndroidLogcatManager
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.Graphs.dll:
@@ -97,7 +95,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3622}
     - Class: 114
-      Script: {instanceID: 4268}
+      Script: {instanceID: 4270}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -154,7 +152,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3622}
     - Class: 114
-      Script: {instanceID: 4268}
+      Script: {instanceID: 4270}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -175,7 +173,84 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 329
       Script: {instanceID: 0}
-    Assets/Scenes/CaixaEletronico.unity:
+    Assets/Scenes/Bank/Bank.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 648}
+    - Class: 114
+      Script: {instanceID: 1480}
+    - Class: 114
+      Script: {instanceID: 2204}
+    - Class: 114
+      Script: {instanceID: 2340}
+    - Class: 114
+      Script: {instanceID: 2558}
+    - Class: 114
+      Script: {instanceID: 2786}
+    - Class: 114
+      Script: {instanceID: 2966}
+    - Class: 114
+      Script: {instanceID: 3228}
+    - Class: 114
+      Script: {instanceID: 3332}
+    - Class: 114
+      Script: {instanceID: 3498}
+    - Class: 114
+      Script: {instanceID: 4710}
+    - Class: 114
+      Script: {instanceID: 4842}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 19719996
+      Script: {instanceID: 0}
+    - Class: 156049354
+      Script: {instanceID: 0}
+    - Class: 483693784
+      Script: {instanceID: 0}
+    - Class: 1839735485
+      Script: {instanceID: 0}
+    Assets/Scenes/Bank/CaixaEletronico.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -215,7 +290,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3622}
     - Class: 114
-      Script: {instanceID: 4708}
+      Script: {instanceID: 4710}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -237,6 +312,55 @@ ScriptsOnlyBuild:
     - Class: 483693784
       Script: {instanceID: 0}
     - Class: 1839735485
+      Script: {instanceID: 0}
+    Assets/Scenes/Bank/Investimento.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1480}
+    - Class: 114
+      Script: {instanceID: 2340}
+    - Class: 114
+      Script: {instanceID: 2786}
+    - Class: 114
+      Script: {instanceID: 2966}
+    - Class: 114
+      Script: {instanceID: 3228}
+    - Class: 114
+      Script: {instanceID: 3332}
+    - Class: 114
+      Script: {instanceID: 3498}
+    - Class: 114
+      Script: {instanceID: 3622}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
     Assets/Scenes/Estante.unity:
     - Class: 1
@@ -297,83 +421,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 1839735485
       Script: {instanceID: 0}
-    Assets/Scenes/InternalAmbients/Bank.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 50
-      Script: {instanceID: 0}
-    - Class: 61
-      Script: {instanceID: 0}
-    - Class: 74
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 91
-      Script: {instanceID: 0}
-    - Class: 95
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 648}
-    - Class: 114
-      Script: {instanceID: 1480}
-    - Class: 114
-      Script: {instanceID: 2204}
-    - Class: 114
-      Script: {instanceID: 2340}
-    - Class: 114
-      Script: {instanceID: 2558}
-    - Class: 114
-      Script: {instanceID: 2786}
-    - Class: 114
-      Script: {instanceID: 2966}
-    - Class: 114
-      Script: {instanceID: 3228}
-    - Class: 114
-      Script: {instanceID: 3332}
-    - Class: 114
-      Script: {instanceID: 3498}
-    - Class: 114
-      Script: {instanceID: 4708}
-    - Class: 114
-      Script: {instanceID: 4840}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
-    - Class: 212
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    - Class: 19719996
-      Script: {instanceID: 0}
-    - Class: 156049354
-      Script: {instanceID: 0}
-    - Class: 483693784
-      Script: {instanceID: 0}
-    - Class: 1839735485
-      Script: {instanceID: 0}
     Assets/Scenes/InternalAmbients/Home.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -418,9 +465,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3498}
     - Class: 114
-      Script: {instanceID: 4708}
+      Script: {instanceID: 4710}
     - Class: 114
-      Script: {instanceID: 4840}
+      Script: {instanceID: 4842}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -489,9 +536,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3498}
     - Class: 114
-      Script: {instanceID: 4708}
+      Script: {instanceID: 4710}
     - Class: 114
-      Script: {instanceID: 4840}
+      Script: {instanceID: 4842}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -560,9 +607,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3498}
     - Class: 114
-      Script: {instanceID: 4708}
+      Script: {instanceID: 4710}
     - Class: 114
-      Script: {instanceID: 4840}
+      Script: {instanceID: 4842}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -631,9 +678,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3498}
     - Class: 114
-      Script: {instanceID: 4708}
+      Script: {instanceID: 4710}
     - Class: 114
-      Script: {instanceID: 4840}
+      Script: {instanceID: 4842}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -702,9 +749,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3498}
     - Class: 114
-      Script: {instanceID: 4708}
+      Script: {instanceID: 4710}
     - Class: 114
-      Script: {instanceID: 4840}
+      Script: {instanceID: 4842}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -773,9 +820,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3498}
     - Class: 114
-      Script: {instanceID: 4708}
+      Script: {instanceID: 4710}
     - Class: 114
-      Script: {instanceID: 4840}
+      Script: {instanceID: 4842}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -799,55 +846,6 @@ ScriptsOnlyBuild:
     - Class: 483693784
       Script: {instanceID: 0}
     - Class: 1839735485
-      Script: {instanceID: 0}
-    Assets/Scenes/Investimento.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 1480}
-    - Class: 114
-      Script: {instanceID: 2340}
-    - Class: 114
-      Script: {instanceID: 2786}
-    - Class: 114
-      Script: {instanceID: 2966}
-    - Class: 114
-      Script: {instanceID: 3228}
-    - Class: 114
-      Script: {instanceID: 3332}
-    - Class: 114
-      Script: {instanceID: 3498}
-    - Class: 114
-      Script: {instanceID: 3622}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
       Script: {instanceID: 0}
     Assets/Scenes/Menu.unity:
     - Class: 1
@@ -958,11 +956,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3498}
     - Class: 114
-      Script: {instanceID: 4708}
+      Script: {instanceID: 4710}
     - Class: 114
-      Script: {instanceID: 4840}
+      Script: {instanceID: 4842}
     - Class: 114
-      Script: {instanceID: 5594}
+      Script: {instanceID: 5596}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -1031,11 +1029,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3498}
     - Class: 114
-      Script: {instanceID: 4708}
+      Script: {instanceID: 4710}
     - Class: 114
-      Script: {instanceID: 4840}
+      Script: {instanceID: 4842}
     - Class: 114
-      Script: {instanceID: 5594}
+      Script: {instanceID: 5596}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -1104,11 +1102,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3498}
     - Class: 114
-      Script: {instanceID: 4708}
+      Script: {instanceID: 4710}
     - Class: 114
-      Script: {instanceID: 4840}
+      Script: {instanceID: 4842}
     - Class: 114
-      Script: {instanceID: 5594}
+      Script: {instanceID: 5596}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -1177,11 +1175,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3498}
     - Class: 114
-      Script: {instanceID: 4708}
+      Script: {instanceID: 4710}
     - Class: 114
-      Script: {instanceID: 4840}
+      Script: {instanceID: 4842}
     - Class: 114
-      Script: {instanceID: 5594}
+      Script: {instanceID: 5596}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -1250,11 +1248,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3498}
     - Class: 114
-      Script: {instanceID: 4708}
+      Script: {instanceID: 4710}
     - Class: 114
-      Script: {instanceID: 4840}
+      Script: {instanceID: 4842}
     - Class: 114
-      Script: {instanceID: 5594}
+      Script: {instanceID: 5596}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -1372,9 +1370,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3622}
     - Class: 114
-      Script: {instanceID: 4022}
+      Script: {instanceID: 4024}
     - Class: 114
-      Script: {instanceID: 5572}
+      Script: {instanceID: 5574}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1478,7 +1476,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3498}
     - Class: 114
-      Script: {instanceID: 5964}
+      Script: {instanceID: 5966}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -1529,7 +1527,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3622}
     - Class: 114
-      Script: {instanceID: 44808}
+      Script: {instanceID: 3894}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1897,6 +1895,12 @@ ScriptsOnlyBuild:
     className: ContentSizeFitter
   - hash:
       serializedVersion: 2
+      Hash: f0fcca6a04bd28f18addf15467fee3c1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ContentManager
+  - hash:
+      serializedVersion: 2
       Hash: 8cb9c869ab50566c3424fcaae4d4269b
     assemblyName: Unity.2D.Tilemap.Extras.dll
     namespaceName: UnityEngine
@@ -2219,12 +2223,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
     className: FabrikSolver2D
-  - hash:
-      serializedVersion: 2
-      Hash: f0fcca6a04bd28f18addf15467fee3c1
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ContentManager
   platform: 13
   scenePathNames:
   - Assets/Scenes/Menu.unity
@@ -2243,10 +2241,10 @@ ScriptsOnlyBuild:
   - Assets/Scenes/PixelArt.unity
   - Assets/Scenes/Estante.unity
   - Assets/Scenes/MenuS/MenuBank.unity
-  - Assets/Scenes/InternalAmbients/Bank.unity
-  - Assets/Scenes/CaixaEletronico.unity
+  - Assets/Scenes/Bank/Bank.unity
+  - Assets/Scenes/Bank/CaixaEletronico.unity
   - Assets/Scenes/Settings.unity
-  - Assets/Scenes/Investimento.unity
+  - Assets/Scenes/Bank/Investimento.unity
   - Assets/Scenes/Aula.unity
   - Assets/Scenes/Aula2.unity
   - Assets/Scenes/menuAulas.unity
