@@ -74,4 +74,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/menuAulas.unity
     guid: 35f573a0518b5c24b9f9a0844724d3c0
+  - enabled: 1
+    path: Assets/Scenes/Bank/BaixoRisco.unity
+    guid: c927dd064a945d148bdec2f5b0fff4b2
   m_configObjects: {}
