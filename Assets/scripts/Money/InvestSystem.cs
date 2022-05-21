@@ -11,12 +11,13 @@ public class InvestSystem : MonoBehaviour
     public Text _text;
     int money;
     int moneyInvested;
-    public int acumulatedProfit = 0;
+    public int acumulatedProfit;
 
     void Start()
     {
         money = _object.money;
         moneyInvested = _object.moneyInvested;
+        acumulatedProfit = PlayerPrefs.GetInt("investProfit", acumulatedProfit);
     }
 
     // Update is called once per frame
@@ -27,16 +28,17 @@ public class InvestSystem : MonoBehaviour
 
         if (System.DateTime.Now.ToString("ss") == "00" || System.DateTime.Now.ToString("ss") == "05" || System.DateTime.Now.ToString("ss") == "10" || System.DateTime.Now.ToString("ss") == "15" || System.DateTime.Now.ToString("ss") == "20" || System.DateTime.Now.ToString("ss") == "25" || System.DateTime.Now.ToString("ss") == "30" || System.DateTime.Now.ToString("ss") == "35" || System.DateTime.Now.ToString("ss") == "40" || System.DateTime.Now.ToString("ss") == "45" || System.DateTime.Now.ToString("ss") == "50" || System.DateTime.Now.ToString("ss") == "55"){
             //int moneyX = Int32.Parse(_object.money);
-            int profit = Random.Range(-1,2);
+            int profit = Random.Range(-1,3);
 
             acumulatedProfit += profit;
+            PlayerPrefs.SetInt("investProfit", (int)acumulatedProfit);
 
             moneyInvested = (_object.moneyInvested + profit);
             //Debug.Log("random " + typeof(profit));
             Debug.Log("dinheiros " + moneyInvested);
             PlayerPrefs.SetInt("investValue", (int)moneyInvested);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            //System.Threading.Thread.Sleep(1000);
+            System.Threading.Thread.Sleep(300);
         }
     }
 }

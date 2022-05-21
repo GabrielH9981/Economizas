@@ -195,3 +195,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   money: 100
   moneyBank: 0
+  moneyInvested: 0
