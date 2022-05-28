@@ -9,6 +9,7 @@ TagManager:
   - carteira
   - buttonsAula
   - Video
+  - paletteColor
   layers:
   - Default
   - TransparentFX

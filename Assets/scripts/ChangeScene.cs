@@ -9,6 +9,20 @@ public class ChangeScene : MonoBehaviour
         SceneManager.LoadScene(scene);
     }
 
+    public void PixelArt(){
+        if (PlayerPrefs.GetInt("moneyValue") >= 100){
+            PlayerPrefs.SetInt("moneyValue", PlayerPrefs.GetInt("moneyValue") - 100);
+            SceneManager.LoadScene("PixelArt");
+        }else{
+            Debug.Log("NÃO TEM DINHEIRO PRA PAGAR - FAZER POP UP DPS");
+        }
+    }
+
+    public void AbortPixelArt(){
+        PlayerPrefs.SetInt("moneyValue", PlayerPrefs.GetInt("moneyValue") + 100);
+        SceneManager.LoadScene("OptionsMuseu");
+    }
+
     public void ExitGame(){
         Application.Quit();
         Debug.Log("é o pijas");

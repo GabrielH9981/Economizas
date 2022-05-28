@@ -265,7 +265,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 29
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -276,7 +276,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Comprar Tela
+  m_Text: Comprar Tela - 100$
 --- !u!222 &43624156
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -436,8 +436,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2, y: -8}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -34.8, y: -5}
+  m_SizeDelta: {x: 306.7, y: 73.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &979756392
 MonoBehaviour:
@@ -646,11 +646,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 29
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
-    m_MaxSize: 40
+    m_MaxSize: 43
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -702,8 +702,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2, y: -119}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -33.4, y: -323}
+  m_SizeDelta: {x: 305.8, y: 74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1918590886
 MonoBehaviour:
@@ -858,7 +858,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 28
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -914,8 +914,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2, y: 98.7}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -34.5, y: 334}
+  m_SizeDelta: {x: 306.7, y: 73.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2032632008
 MonoBehaviour:
@@ -963,8 +963,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 625360594}
         m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
-        m_MethodName: LoadScenes
-        m_Mode: 5
+        m_MethodName: PixelArt
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
