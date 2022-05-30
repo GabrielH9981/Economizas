@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/PixelArt.unity
+- path: Assets/Scenes/ArtGalery/OptionsMuseu.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

@@ -5,6 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class ChangeScene : MonoBehaviour
 {
+    public GameObject PopUp;
+
+    public void Start(){
+        if (PopUp != null){
+            PopUp.SetActive(false);
+        }
+    }
+
     public void LoadScenes(string scene){
         SceneManager.LoadScene(scene);
     }
@@ -15,6 +23,7 @@ public class ChangeScene : MonoBehaviour
             SceneManager.LoadScene("PixelArt");
         }else{
             Debug.Log("NÃO TEM DINHEIRO PRA PAGAR - FAZER POP UP DPS");
+            PopUp.SetActive(true);
         }
     }
 

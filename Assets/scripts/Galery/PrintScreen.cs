@@ -43,5 +43,7 @@ public class PrintScreen : MonoBehaviour {
         palletColor.SetActive(false);
         PainelQuadro.SetActive(false);
         ScreenCapture.CaptureScreenshot("Assets/quadros/" + nomeImagem + ".png", 1);
+        ScreenCapture.CaptureScreenshot("Assets/" + nomeImagem + ".png", 1);
+        ScreenCapture.CaptureScreenshot(nomeImagem + ".png", 1);
     }
 }

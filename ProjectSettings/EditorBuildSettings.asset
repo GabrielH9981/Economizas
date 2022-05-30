@@ -42,10 +42,10 @@ EditorBuildSettings:
     path: Assets/Scenes/MenuS/MenuMuseu.unity
     guid: 7c3a3ed35186f284dad3582c47500855
   - enabled: 1
-    path: Assets/Scenes/OptionsMuseu.unity
+    path: Assets/Scenes/ArtGalery/OptionsMuseu.unity
     guid: c2a8262b17b44ee4ab1b10fb37c48114
   - enabled: 1
-    path: Assets/Scenes/PixelArt.unity
+    path: Assets/Scenes/ArtGalery/PixelArt.unity
     guid: 17bfc94cc6e472f4f91508aece314668
   - enabled: 1
     path: Assets/Scenes/Estante.unity
