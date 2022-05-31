@@ -6,14 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/InternalAmbients/Home.unity
+    guid: be336e848379cf647be0520adca8ca40
+  - enabled: 1
     path: Assets/Scenes/MenuS/MenuHome.unity
     guid: 712f4c125a5d66a4cbd28dc3ea19de38
   - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: c1b9c0204a0b57f4ba97226576d4f385
-  - enabled: 1
-    path: Assets/Scenes/InternalAmbients/Home.unity
-    guid: be336e848379cf647be0520adca8ca40
   - enabled: 1
     path: Assets/Scenes/InternalAmbients/Shop.unity
     guid: 2363ee6f540ea96458a293c492b8db57
@@ -77,4 +77,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Bank/BaixoRisco.unity
     guid: c927dd064a945d148bdec2f5b0fff4b2
+  - enabled: 1
+    path: Assets/Scenes/clickerGame.unity
+    guid: f36d581277481154f872709616dac0a2
   m_configObjects: {}

@@ -4,6 +4,7 @@ ScriptsOnlyBuild:
     - AulaController
     - BankController
     - ChangeScene
+    - ClickerGame
     - ContentManager
     - EmprestimoController
     - FixedJoystick
@@ -42,8 +43,6 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.RandomBrush
     Unity.2D.Tilemap.Extras.dll:
     - UnityEngine.Tilemaps.AnimatedTile
-    Unity.Mobile.AndroidLogcat.Editor.dll:
-    - Unity.Android.Logcat.AndroidLogcatManager
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.Graphs.dll:
@@ -636,6 +635,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 84
+      Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
     - Class: 95
@@ -649,20 +650,36 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2204}
     - Class: 114
+      Script: {instanceID: 2340}
+    - Class: 114
+      Script: {instanceID: 2492}
+    - Class: 114
+      Script: {instanceID: 2560}
+    - Class: 114
+      Script: {instanceID: 2566}
+    - Class: 114
       Script: {instanceID: 2788}
     - Class: 114
       Script: {instanceID: 2968}
     - Class: 114
       Script: {instanceID: 3230}
     - Class: 114
+      Script: {instanceID: 3234}
+    - Class: 114
       Script: {instanceID: 3336}
     - Class: 114
       Script: {instanceID: 3502}
+    - Class: 114
+      Script: {instanceID: 3626}
+    - Class: 114
+      Script: {instanceID: 3750}
     - Class: 114
       Script: {instanceID: 4716}
     - Class: 114
       Script: {instanceID: 4848}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -677,6 +694,8 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 329
       Script: {instanceID: 0}
     - Class: 19719996
       Script: {instanceID: 0}
@@ -1192,8 +1211,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
-    - Class: 84
-      Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
     - Class: 95
@@ -1207,29 +1224,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2204}
     - Class: 114
-      Script: {instanceID: 2340}
-    - Class: 114
-      Script: {instanceID: 2492}
-    - Class: 114
-      Script: {instanceID: 2560}
-    - Class: 114
-      Script: {instanceID: 2566}
-    - Class: 114
       Script: {instanceID: 2788}
     - Class: 114
       Script: {instanceID: 2968}
     - Class: 114
       Script: {instanceID: 3230}
     - Class: 114
-      Script: {instanceID: 3234}
-    - Class: 114
       Script: {instanceID: 3336}
     - Class: 114
       Script: {instanceID: 3502}
-    - Class: 114
-      Script: {instanceID: 3626}
-    - Class: 114
-      Script: {instanceID: 3750}
     - Class: 114
       Script: {instanceID: 4716}
     - Class: 114
@@ -1237,8 +1240,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5604}
     - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -1253,8 +1254,6 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
-      Script: {instanceID: 0}
-    - Class: 329
       Script: {instanceID: 0}
     - Class: 19719996
       Script: {instanceID: 0}
@@ -1576,6 +1575,57 @@ ScriptsOnlyBuild:
     - Class: 196
       Script: {instanceID: 0}
     - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/clickerGame.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1480}
+    - Class: 114
+      Script: {instanceID: 2340}
+    - Class: 114
+      Script: {instanceID: 2788}
+    - Class: 114
+      Script: {instanceID: 2968}
+    - Class: 114
+      Script: {instanceID: 3230}
+    - Class: 114
+      Script: {instanceID: 3336}
+    - Class: 114
+      Script: {instanceID: 3502}
+    - Class: 114
+      Script: {instanceID: 3626}
+    - Class: 114
+      Script: {instanceID: 36724}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -2339,11 +2389,17 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
     className: FabrikSolver2D
+  - hash:
+      serializedVersion: 2
+      Hash: e1357996b43015e80c9034f3e114fb6c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ClickerGame
   platform: 13
   scenePathNames:
+  - Assets/Scenes/InternalAmbients/Home.unity
   - Assets/Scenes/MenuS/MenuHome.unity
   - Assets/Scenes/Menu.unity
-  - Assets/Scenes/InternalAmbients/Home.unity
   - Assets/Scenes/InternalAmbients/Shop.unity
   - Assets/Scenes/MenuS/MenuShop.unity
   - Assets/Scenes/MenuS/MenuSchool.unity
@@ -2365,4 +2421,5 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Aula2.unity
   - Assets/Scenes/menuAulas.unity
   - Assets/Scenes/Bank/BaixoRisco.unity
+  - Assets/Scenes/clickerGame.unity
   playerPath: C:/Users/Gabriel/Desktop/economizasTesteBala.apk
