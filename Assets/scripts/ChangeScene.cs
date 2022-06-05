@@ -62,6 +62,9 @@ public class ChangeScene : MonoBehaviour
             PlayerPrefs.SetString("Cena", "Shop");
             LoadScenes("TransitionScreen");    
         }
+        if (objCollider.name == "BalcaoShop"){
+            LoadScenes("ShopItens");
+        }
         if (objCollider.name == "PortaShop"){
             PlayerPrefs.SetString("Cena", "MenuShop");
             LoadScenes("TransitionScreen");

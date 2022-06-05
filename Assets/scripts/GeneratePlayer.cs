@@ -9,14 +9,72 @@ public class GeneratePlayer : MonoBehaviour
     public Scene scene;
 
     public GameObject activePlayer;
+
     public GameObject basePlayer;
     public GameObject alienPlayer;
+    public GameObject cartolaPlayer;
+    public GameObject faixaPlayer;
+    public GameObject ghostPlayer;
+    public GameObject maskPlayer;
+    public GameObject pirataPlayer;
+    public GameObject vikingPlayer;
+    public GameObject witcherPlayer;
 
+    private int money;
+
+    public void ChoseAlien(){
+        money = PlayerPrefs.GetInt("moneyValue", (int)money);
+        money -= 5000;
+        PlayerPrefs.SetInt("moneyValue", (int)money);
+        activePlayer = alienPlayer;
+    }
+    public void ChoseCartola(){
+        money = PlayerPrefs.GetInt("moneyValue", (int)money);
+        money -= 200;
+        PlayerPrefs.SetInt("moneyValue", (int)money);
+        activePlayer = cartolaPlayer;
+    }
+    public void ChoseFaixa(){
+        money = PlayerPrefs.GetInt("moneyValue", (int)money);
+        money -= 400;
+        PlayerPrefs.SetInt("moneyValue", (int)money);
+        activePlayer = faixaPlayer;
+    }
+    public void ChoseGhost(){
+        money = PlayerPrefs.GetInt("moneyValue", (int)money);
+        money -= 3000;
+        PlayerPrefs.SetInt("moneyValue", (int)money);
+        activePlayer = ghostPlayer;
+    }
+    public void ChoseMask(){
+        money = PlayerPrefs.GetInt("moneyValue", (int)money);
+        money -= 1000;
+        PlayerPrefs.SetInt("moneyValue", (int)money);
+        activePlayer = maskPlayer;
+    }
+    public void ChosePirata(){
+        money = PlayerPrefs.GetInt("moneyValue", (int)money);
+        money -= 1500;
+        PlayerPrefs.SetInt("moneyValue", (int)money);
+        activePlayer = pirataPlayer;
+    }
+    public void ChoseViking(){
+        money = PlayerPrefs.GetInt("moneyValue", (int)money);
+        money -= 2000;
+        PlayerPrefs.SetInt("moneyValue", (int)money);
+        activePlayer = vikingPlayer;
+    }
+    public void ChoseWitcher(){
+        money = PlayerPrefs.GetInt("moneyValue", (int)money);
+        money -= 500;
+        PlayerPrefs.SetInt("moneyValue", (int)money);
+        activePlayer = witcherPlayer;
+    }
+    
     void Start()
     {
         scene = SceneManager.GetActiveScene();
         Debug.Log("Active Scene is '" + scene.name + "'.");
-        activePlayer = alienPlayer;
 
         if (scene.name == "MenuHome"){
             Instantiate(activePlayer, new Vector3(-10.51305f, 9.488046f, 0), Quaternion.identity);

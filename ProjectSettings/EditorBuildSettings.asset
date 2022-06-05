@@ -83,4 +83,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ArtGalery/Leilao.unity
     guid: 6cdc4e0b327a24949a0cf0b291472e11
+  - enabled: 1
+    path: Assets/Scenes/InternalAmbients/ShopItens.unity
+    guid: 394b42621677710488f01bb19077c667
   m_configObjects: {}
