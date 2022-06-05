@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.IO;
 
 public class PrintScreen : MonoBehaviour {
 
@@ -10,6 +11,7 @@ public class PrintScreen : MonoBehaviour {
     public GameObject palletColor;
     public GameObject PainelQuadro;
     public InputField nomeQuadro;
+    private string _caminho;
 
    [Tooltip("Nome para o arquivo de imagem.")]
    public string nomeImagem; //A imagem fica armazenada por padrão na pasta raiz do projeto, visível pelo Windows Explorer.
@@ -17,6 +19,14 @@ public class PrintScreen : MonoBehaviour {
    public int qualidade = 1;
 
     public void Start(){
+        _caminho = Application.dataPath + "/Resources/";
+
+        if (!Directory.Exists(_caminho))
+        {
+            Directory.CreateDirectory(_caminho);
+        }
+
+
        CancelAction();
     }
 
@@ -42,8 +52,10 @@ public class PrintScreen : MonoBehaviour {
         buttonCancel.SetActive(false);
         palletColor.SetActive(false);
         PainelQuadro.SetActive(false);
-        ScreenCapture.CaptureScreenshot("Assets/quadros/" + nomeImagem + ".png", 1);
-        ScreenCapture.CaptureScreenshot("Assets/" + nomeImagem + ".png", 1);
-        ScreenCapture.CaptureScreenshot(nomeImagem + ".png", 1);
+        ScreenCapture.CaptureScreenshot(_caminho + nomeImagem + ".png", 1);
+        
+        //ScreenCapture.CaptureScreenshot("\\Assets\\Resources\\" + nomeImagem + ".png", 1);
+        //ScreenCapture.CaptureScreenshot("Assets/" + nomeImagem + ".png", 1);
+        //ScreenCapture.CaptureScreenshot(nomeImagem + ".png", 1);
     }
 }

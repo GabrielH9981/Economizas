@@ -10,6 +10,7 @@ TagManager:
   - buttonsAula
   - Video
   - paletteColor
+  - joystick
   layers:
   - Default
   - TransparentFX
