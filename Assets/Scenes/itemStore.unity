@@ -459,7 +459,7 @@ MonoBehaviour:
   buttonGhost: {fileID: 1679575042}
   buttonMask: {fileID: 1038180155}
   buttonPirata: {fileID: 408927908}
-  buttonViking: {fileID: 408927908}
+  buttonViking: {fileID: 522274623}
   buttonWitcher: {fileID: 1620895461}
   selectedPlayer: 
 --- !u!114 &82653532

@@ -34,7 +34,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 11.5244, y: -5.9627}
+  m_AnchoredPosition: {x: 11.5244, y: -12}
   m_SizeDelta: {x: 348.3491, y: 94.4836}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6405456024926322182
@@ -208,8 +208,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bae3f2919f6fbaf439554b9cb1ebbb4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene:
-    m_Handle: 0
   activePlayer: {fileID: 5984636520203137518, guid: cbd4d935d15a97b4fb5157fb27f7592b, type: 3}
   basePlayer: {fileID: 5984636520203137518, guid: cbd4d935d15a97b4fb5157fb27f7592b, type: 3}
   alienPlayer: {fileID: 5984636520203137518, guid: 0cb8f97c268ca1447852d279c60d6827, type: 3}
@@ -220,6 +218,9 @@ MonoBehaviour:
   pirataPlayer: {fileID: 5984636520203137518, guid: 87c51c7e87984f84aa8596b01c4cf9a3, type: 3}
   vikingPlayer: {fileID: 5984636520203137518, guid: c764f273ce3e88548a6247d326b29a9f, type: 3}
   witcherPlayer: {fileID: 5984636520203137518, guid: f5cee43f3f946f54fbc5168c70ea197c, type: 3}
+  scene:
+    m_Handle: 0
+  selectedPlayer: 
 --- !u!1 &6405456025189593139
 GameObject:
   m_ObjectHideFlags: 0
