@@ -86,4 +86,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/InternalAmbients/ShopItens.unity
     guid: 394b42621677710488f01bb19077c667
+  - enabled: 1
+    path: Assets/Scenes/itemStore.unity
+    guid: 7e31788604f535a449903e920ef4407f
   m_configObjects: {}

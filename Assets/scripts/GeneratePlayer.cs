@@ -6,8 +6,6 @@ using UnityEngine.SceneManagement;
 public class GeneratePlayer : MonoBehaviour
 {
     // Start is called before the first frame update
-    public Scene scene;
-
     public GameObject activePlayer;
 
     public GameObject basePlayer;
@@ -20,59 +18,40 @@ public class GeneratePlayer : MonoBehaviour
     public GameObject vikingPlayer;
     public GameObject witcherPlayer;
 
-    private int money;
-
-    public void ChoseAlien(){
-        money = PlayerPrefs.GetInt("moneyValue", (int)money);
-        money -= 5000;
-        PlayerPrefs.SetInt("moneyValue", (int)money);
-        activePlayer = alienPlayer;
-    }
-    public void ChoseCartola(){
-        money = PlayerPrefs.GetInt("moneyValue", (int)money);
-        money -= 200;
-        PlayerPrefs.SetInt("moneyValue", (int)money);
-        activePlayer = cartolaPlayer;
-    }
-    public void ChoseFaixa(){
-        money = PlayerPrefs.GetInt("moneyValue", (int)money);
-        money -= 400;
-        PlayerPrefs.SetInt("moneyValue", (int)money);
-        activePlayer = faixaPlayer;
-    }
-    public void ChoseGhost(){
-        money = PlayerPrefs.GetInt("moneyValue", (int)money);
-        money -= 3000;
-        PlayerPrefs.SetInt("moneyValue", (int)money);
-        activePlayer = ghostPlayer;
-    }
-    public void ChoseMask(){
-        money = PlayerPrefs.GetInt("moneyValue", (int)money);
-        money -= 1000;
-        PlayerPrefs.SetInt("moneyValue", (int)money);
-        activePlayer = maskPlayer;
-    }
-    public void ChosePirata(){
-        money = PlayerPrefs.GetInt("moneyValue", (int)money);
-        money -= 1500;
-        PlayerPrefs.SetInt("moneyValue", (int)money);
-        activePlayer = pirataPlayer;
-    }
-    public void ChoseViking(){
-        money = PlayerPrefs.GetInt("moneyValue", (int)money);
-        money -= 2000;
-        PlayerPrefs.SetInt("moneyValue", (int)money);
-        activePlayer = vikingPlayer;
-    }
-    public void ChoseWitcher(){
-        money = PlayerPrefs.GetInt("moneyValue", (int)money);
-        money -= 500;
-        PlayerPrefs.SetInt("moneyValue", (int)money);
-        activePlayer = witcherPlayer;
-    }
+    public Scene scene;
+    public string selectedPlayer;
     
     void Start()
     {
+        selectedPlayer = PlayerPrefs.GetString("selectedPlayer", selectedPlayer);
+        if (selectedPlayer == "alienPlayer"){
+            activePlayer = alienPlayer;
+        }
+        if (selectedPlayer == "cartolaPlayer"){
+            activePlayer = cartolaPlayer;
+        }
+        if (selectedPlayer == "faixaPlayer"){
+            activePlayer = faixaPlayer;
+        }
+        if (selectedPlayer == "ghostPlayer"){
+            activePlayer = ghostPlayer;
+        }
+        if (selectedPlayer == "maskPlayer"){
+            activePlayer = maskPlayer;
+        }
+        if (selectedPlayer == "pirataPlayer"){
+            activePlayer = pirataPlayer;
+        }
+        if (selectedPlayer == "vikingPlayer"){
+            activePlayer = vikingPlayer;
+        }
+        if (selectedPlayer == "witcherPlayer"){
+            activePlayer = witcherPlayer;
+        }
+        if (selectedPlayer == "basePlayer"){
+            activePlayer = basePlayer;
+        }
+
         scene = SceneManager.GetActiveScene();
         Debug.Log("Active Scene is '" + scene.name + "'.");
 
