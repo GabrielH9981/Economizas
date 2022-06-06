@@ -15,6 +15,7 @@ ScriptsOnlyBuild:
     - InterfaceController
     - InvestSystem
     - LoadingScreen
+    - MeusQuadros
     - MoneyController
     - MoneyInvestedController
     - MoneySistem
@@ -107,6 +108,59 @@ ScriptsOnlyBuild:
       Script: {instanceID: 3508}
     - Class: 114
       Script: {instanceID: 3634}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/ArtGalery/MeusQuadros.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1480}
+    - Class: 114
+      Script: {instanceID: 1482}
+    - Class: 114
+      Script: {instanceID: 2344}
+    - Class: 114
+      Script: {instanceID: 2794}
+    - Class: 114
+      Script: {instanceID: 2974}
+    - Class: 114
+      Script: {instanceID: 3342}
+    - Class: 114
+      Script: {instanceID: 3508}
+    - Class: 114
+      Script: {instanceID: 3634}
+    - Class: 114
+      Script: {instanceID: 46646}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -2119,7 +2173,7 @@ ScriptsOnlyBuild:
     className: AndroidReceivedNotificationMainThreadDispatcher
   - hash:
       serializedVersion: 2
-      Hash: 45e12f2f30331b73b8141126bf0ff9d6
+      Hash: 49b907c636ee156421f6da9daccad0cf
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: QuadrosController
@@ -2753,6 +2807,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
     className: FabrikSolver2D
+  - hash:
+      serializedVersion: 2
+      Hash: 8fbb899f0a51360e8d4302a03f9f5a8f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MeusQuadros
   platform: 13
   scenePathNames:
   - Assets/Scenes/Menu.unity
@@ -2783,4 +2843,5 @@ ScriptsOnlyBuild:
   - Assets/Scenes/ArtGalery/Leilao.unity
   - Assets/Scenes/InternalAmbients/ShopItens.unity
   - Assets/Scenes/itemStore.unity
+  - Assets/Scenes/ArtGalery/MeusQuadros.unity
   playerPath: C:/Users/Gabriel/Desktop/economizasTesteBala.apk

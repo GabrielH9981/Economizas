@@ -89,4 +89,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/itemStore.unity
     guid: 7e31788604f535a449903e920ef4407f
+  - enabled: 1
+    path: Assets/Scenes/ArtGalery/MeusQuadros.unity
+    guid: 58e5f6ef42cd10b4797a37389e0e68fd
   m_configObjects: {}

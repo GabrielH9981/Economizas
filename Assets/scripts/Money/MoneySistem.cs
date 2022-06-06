@@ -63,7 +63,7 @@ public class MoneySistem : MonoBehaviour
     }
 
     public void testeMoney(){
-        money = 50000;
+        money += 50000;
         PlayerPrefs.SetInt("moneyValue", (int)money);
         moneyBank = 200;
         PlayerPrefs.SetInt("bankValue", (int)moneyBank);

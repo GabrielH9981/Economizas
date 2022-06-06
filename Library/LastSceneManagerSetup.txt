@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/ArtGalery/Leilao.unity
+- path: Assets/Scenes/ArtGalery/MeusQuadros.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
