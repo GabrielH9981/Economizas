@@ -62,8 +62,6 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
-    UnityEditor.UI.dll:
-    - UnityEditor.UI.CanvasScalerEditor
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -2121,7 +2119,7 @@ ScriptsOnlyBuild:
     className: AndroidReceivedNotificationMainThreadDispatcher
   - hash:
       serializedVersion: 2
-      Hash: 9136fb5f84ccb425738abfc10747b10d
+      Hash: 45e12f2f30331b73b8141126bf0ff9d6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: QuadrosController

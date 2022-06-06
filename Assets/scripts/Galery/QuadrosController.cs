@@ -9,61 +9,31 @@ public class QuadrosController : MonoBehaviour
     //troca image file
     public Sprite[] spriteArray;
     public SpriteRenderer spriteRenderer;
-    string[] nomeQuadros;
+    string[] nomeQuadros = new string[6]{"Jinx Cheia de Ódio", "Pikachu bala", "Controle", "Controle 2", "Yoshi", "Maçazinha"};
+    string[] priceQuadros = new string[6]{"$50.000", "$25.500", "$20.000", "$11.000", "$10.000", "$5.000"};
 
-    int numArquivos = 0;
-    int numQuadro = 1;
+    public Text textName;
+    public Text textPrice;
+
+    public int numQuadro = 1;
 
     private string _caminho;
 
-    public void ImageChange(int numArquivos){
-        numQuadro = PlayerPrefs.GetInt("numQuadro", (int)numQuadro);
-        numArquivos = PlayerPrefs.GetInt("numArquivos", (int)numArquivos);
+    public void ImageChange(){
+        textName.text = nomeQuadros[numQuadro].ToString();
+        textPrice.text = priceQuadros[numQuadro].ToString();
 
         spriteRenderer.sprite = spriteArray[numQuadro];
-        Debug.Log("olha o num fdp>>> " + numQuadro);
-        Debug.Log("olha o num fdpp>>> " + numArquivos);
-
-        if (numQuadro <= (numArquivos - 2)){
-            numQuadro +=1;
-            PlayerPrefs.SetInt("numQuadro", (int)numQuadro);
-            Debug.Log("entrou no if");
-        }else{
-            numQuadro=0;
-            PlayerPrefs.SetInt("numQuadro", (int)numQuadro);
-            Debug.Log("entrou no else " + numQuadro);
+        numQuadro +=1;
+        if (numQuadro == 6){
+            numQuadro = 0;
         }
     }
 
     void Start()
     {
         numQuadro = 0;
-        PlayerPrefs.SetInt("numQuadro", (int)numQuadro);
-        _caminho = Application.dataPath + "/files/";
-
-        string[] arquivos = Directory.GetFiles(_caminho, "*png", SearchOption.AllDirectories);
-        string auxNome = "a";
-
-        List<string> list = new List<string>();
-
-        foreach (string arq in arquivos){
-            
-            //remove as parada desnecessária pra ficar só o nome do arquivo sem a extensão
-            auxNome = arq.Remove(0, 44);
-            auxNome = auxNome.Remove(auxNome.Length - 4);
-
-            list.Add(auxNome);
-
-            numArquivos+=1;
-            PlayerPrefs.SetInt("numArquivos", (int)numArquivos);
-            spriteArray = Resources.LoadAll<Sprite>("");
-            //Instantiate(objeto,destino.position,destino.rotation);
-        }
-
-        nomeQuadros = list.ToArray();
-        Debug.Log("Num arquivos: " + numArquivos);
-
-        
+        ImageChange();
     }
 
     void Update()
